@@ -1,0 +1,71 @@
+/*
+ * Thunderbird userChrome.css
+ * For version 60 or later *ONLY*, will probably break and uglyfy older versions
+ * of TB.
+ *
+ * it's meant to be used with the default 3 panel split layout
+ */
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+
+
+
+#messengerWindow[sizemode="normal"] #navigation-toolbox {
+  margin: 0px 0px 0px !important;
+}
+
+
+
+
+	/* eliminates the box shadow */
+
+	#conversationHeaderWrapper
+	{
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+
+	/* changes attributes of the conversation header */
+
+	#conversationHeader
+	{
+		padding: 4px 10px !important;
+		background-image:none !important;
+		min-height: 33px !important;
+		max-height: 33px !important;
+	}
+
+	/*
+	 * the subject in the message header. Center it vertically, adjust the
+	 * height of the subject bar.
+	 */
+
+	.subject
+	{
+		font-weight: bold; !important;
+		padding-top: 0px !important;
+		padding-bottom: 12px !important;
+		margin-top: 0px !important;
+		margin-bottom: 12px !important;
+		font-size: 14px !important;
+	}
+
+	/*
+	 * more subtle (= brighter) border around the message. Remove the box
+	 * shadow and rounded corners.
+	 */
+
+	.message
+	{
+		border: 1px solid #ccc !important;
+		-moz-box-shadow: none !important;
+		border-radius: 0 !important;
+		box-shadow: none !important;
+	}
+
+	#folderpane-title {
+	    font-size: 1.2em !important;
+	    font-weight: bold !important;
+	}
+}
